@@ -1,0 +1,829 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     29225,        819]
+NotebookOptionsPosition[     28321,        782]
+NotebookOutlinePosition[     28678,        798]
+CellTagsIndexPosition[     28635,        795]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{"lambda", "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"betai", "+", 
+          RowBox[{"betad", "*", 
+           RowBox[{"(", 
+            RowBox[{"mu", "+", "d"}], ")"}]}]}], ")"}], "*", "s", "*", "i"}], 
+       "-", 
+       RowBox[{"mu", "*", "s"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"betai", "+", 
+          RowBox[{"betad", "*", 
+           RowBox[{"(", 
+            RowBox[{"mu", "+", "d"}], ")"}]}]}], ")"}], "*", "s", "*", "i"}], 
+       "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"alpha", "+", "mu"}], ")"}], "*", "e"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{
+       RowBox[{"alpha", "*", "e"}], "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"mu", "+", "d", "+", "k"}], ")"}], "*", "i"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{
+       RowBox[{"k", "*", "i"}], "-", 
+       RowBox[{"mu", "*", "r"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"i", "\[NotEqual]", "0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "e", ",", "i", ",", "r"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7052363937719584`*^9, 3.7052363955200567`*^9}, {
+  3.705237827076125*^9, 3.705238001739709*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"s", "\[Rule]", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}], 
+      RowBox[{"alpha", " ", 
+       RowBox[{"(", 
+        RowBox[{"betai", "+", 
+         RowBox[{"betad", " ", "d"}], "+", 
+         RowBox[{"betad", " ", "mu"}]}], ")"}]}]]}], ",", 
+    RowBox[{"e", "\[Rule]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+        RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+        RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+        RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+        RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+        RowBox[{"alpha", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        RowBox[{"d", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        RowBox[{"k", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        SuperscriptBox["mu", "3"]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["alpha", "2"], "+", 
+          RowBox[{"alpha", " ", "mu"}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"betai", "+", 
+          RowBox[{"betad", " ", "d"}], "+", 
+          RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}]}], ",", 
+    RowBox[{"i", "\[Rule]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+        RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+        RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+        RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+        RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+        RowBox[{"alpha", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        RowBox[{"d", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        RowBox[{"k", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        SuperscriptBox["mu", "3"]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"betai", "+", 
+          RowBox[{"betad", " ", "d"}], "+", 
+          RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}]}], ",", 
+    RowBox[{"r", "\[Rule]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"alpha", " ", "betai", " ", "k", " ", "lambda"}], "+", 
+        RowBox[{"alpha", " ", "betad", " ", "d", " ", "k", " ", "lambda"}], 
+        "-", 
+        RowBox[{"alpha", " ", "d", " ", "k", " ", "mu"}], "-", 
+        RowBox[{"alpha", " ", 
+         SuperscriptBox["k", "2"], " ", "mu"}], "+", 
+        RowBox[{"alpha", " ", "betad", " ", "k", " ", "lambda", " ", "mu"}], 
+        "-", 
+        RowBox[{"alpha", " ", "k", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        RowBox[{"d", " ", "k", " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        RowBox[{
+         SuperscriptBox["k", "2"], " ", 
+         SuperscriptBox["mu", "2"]}], "-", 
+        RowBox[{"k", " ", 
+         SuperscriptBox["mu", "3"]}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"mu", " ", 
+        RowBox[{"(", 
+         RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"betai", "+", 
+          RowBox[{"betad", " ", "d"}], "+", 
+          RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}]}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.70523801388519*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}], 
+   RowBox[{"alpha", " ", 
+    RowBox[{"(", 
+     RowBox[{"betai", "+", 
+      RowBox[{"betad", " ", "d"}], "+", 
+      RowBox[{"betad", " ", "mu"}]}], ")"}]}]], "]"}]], "Input",
+ CellChangeTimes->{{3.705238022595251*^9, 3.705238036495201*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}], 
+  RowBox[{"alpha", " ", 
+   RowBox[{"(", 
+    RowBox[{"betai", "+", 
+     RowBox[{"betad", " ", 
+      RowBox[{"(", 
+       RowBox[{"d", "+", "mu"}], ")"}]}]}], ")"}]}]]], "Output",
+ CellChangeTimes->{{3.705238032318359*^9, 3.705238037305272*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+     RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+     RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+     RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+     RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+     RowBox[{"alpha", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     RowBox[{"d", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     RowBox[{"k", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     SuperscriptBox["mu", "3"]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["alpha", "2"], "+", 
+       RowBox[{"alpha", " ", "mu"}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"betai", "+", 
+       RowBox[{"betad", " ", "d"}], "+", 
+       RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7052380415425262`*^9, 3.705238054027157*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     SuperscriptBox["mu", "2"]}], " ", 
+    RowBox[{"(", 
+     RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}], "+", 
+   RowBox[{"alpha", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"betai", " ", "lambda"}], "+", 
+      RowBox[{"betad", " ", "lambda", " ", 
+       RowBox[{"(", 
+        RowBox[{"d", "+", "mu"}], ")"}]}], "-", 
+      RowBox[{"mu", " ", 
+       RowBox[{"(", 
+        RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}]}], ")"}]}]}], 
+  RowBox[{"alpha", " ", 
+   RowBox[{"(", 
+    RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"betai", "+", 
+     RowBox[{"betad", " ", 
+      RowBox[{"(", 
+       RowBox[{"d", "+", "mu"}], ")"}]}]}], ")"}]}]]], "Output",
+ CellChangeTimes->{3.7052380549303913`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+     RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+     RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+     RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+     RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+     RowBox[{"alpha", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     RowBox[{"d", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     RowBox[{"k", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     SuperscriptBox["mu", "3"]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"betai", "+", 
+       RowBox[{"betad", " ", "d"}], "+", 
+       RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.705238127461853*^9, 3.705238137744907*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     SuperscriptBox["mu", "2"]}], " ", 
+    RowBox[{"(", 
+     RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}], "+", 
+   RowBox[{"alpha", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"betai", " ", "lambda"}], "+", 
+      RowBox[{"betad", " ", "lambda", " ", 
+       RowBox[{"(", 
+        RowBox[{"d", "+", "mu"}], ")"}]}], "-", 
+      RowBox[{"mu", " ", 
+       RowBox[{"(", 
+        RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}]}], ")"}]}]}], 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"betai", "+", 
+     RowBox[{"betad", " ", 
+      RowBox[{"(", 
+       RowBox[{"d", "+", "mu"}], ")"}]}]}], ")"}]}]]], "Output",
+ CellChangeTimes->{3.705238138221301*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"alpha", " ", "betai", " ", "k", " ", "lambda"}], "+", 
+     RowBox[{"alpha", " ", "betad", " ", "d", " ", "k", " ", "lambda"}], "-", 
+     
+     RowBox[{"alpha", " ", "d", " ", "k", " ", "mu"}], "-", 
+     RowBox[{"alpha", " ", 
+      SuperscriptBox["k", "2"], " ", "mu"}], "+", 
+     RowBox[{"alpha", " ", "betad", " ", "k", " ", "lambda", " ", "mu"}], "-", 
+     RowBox[{"alpha", " ", "k", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     RowBox[{"d", " ", "k", " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     RowBox[{
+      SuperscriptBox["k", "2"], " ", 
+      SuperscriptBox["mu", "2"]}], "-", 
+     RowBox[{"k", " ", 
+      SuperscriptBox["mu", "3"]}]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{"mu", " ", 
+     RowBox[{"(", 
+      RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"betai", "+", 
+       RowBox[{"betad", " ", "d"}], "+", 
+       RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.705238152922268*^9, 3.705238166385909*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"k", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["mu", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}], "+", 
+      RowBox[{"alpha", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "betai"}], " ", "lambda"}], "-", 
+         RowBox[{"betad", " ", "lambda", " ", 
+          RowBox[{"(", 
+           RowBox[{"d", "+", "mu"}], ")"}]}], "+", 
+         RowBox[{"mu", " ", 
+          RowBox[{"(", 
+           RowBox[{"d", "+", "k", "+", "mu"}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+   
+   RowBox[{"mu", " ", 
+    RowBox[{"(", 
+     RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"betai", "+", 
+      RowBox[{"betad", " ", 
+       RowBox[{"(", 
+        RowBox[{"d", "+", "mu"}], ")"}]}]}], ")"}]}]]}]], "Output",
+ CellChangeTimes->{3.70523816754747*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{"lambda", "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"betai", "+", 
+          RowBox[{"betad", "*", 
+           RowBox[{"(", 
+            RowBox[{"mu", "+", "d"}], ")"}]}]}], ")"}], "*", "s", "*", "i"}], 
+       "-", 
+       RowBox[{"mu", "*", "s"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"betai", "+", 
+          RowBox[{"betad", "*", 
+           RowBox[{"(", 
+            RowBox[{"mu", "+", "d"}], ")"}]}]}], ")"}], "*", "s", "*", "i"}], 
+       "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"alpha", "+", "mu"}], ")"}], "*", "e"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{
+       RowBox[{"alpha", "*", "e"}], "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"mu", "+", "d", "+", "k"}], ")"}], "*", "i"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"0", "\[Equal]", 
+      RowBox[{
+       RowBox[{"k", "*", "i"}], "-", 
+       RowBox[{"mu", "*", "r"}]}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "e", ",", "i", ",", "r"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.705238184055869*^9, 3.705238185370768*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"s", "\[Rule]", 
+      FractionBox["lambda", "mu"]}], ",", 
+     RowBox[{"e", "\[Rule]", "0"}], ",", 
+     RowBox[{"i", "\[Rule]", "0"}], ",", 
+     RowBox[{"r", "\[Rule]", "0"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"s", "\[Rule]", 
+      RowBox[{"-", 
+       RowBox[{
+        FractionBox["1", 
+         RowBox[{"alpha", " ", "mu"}]], 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "alpha"}], " ", "lambda"}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"alpha", " ", "d", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+               
+               RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"d", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"k", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"betai", "+", 
+               RowBox[{"betad", " ", "d"}], "+", 
+               RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"alpha", " ", "k", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+               
+               RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"d", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"k", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"betai", "+", 
+               RowBox[{"betad", " ", "d"}], "+", 
+               RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"alpha", " ", "mu", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+               
+               RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"d", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"k", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"betai", "+", 
+               RowBox[{"betad", " ", "d"}], "+", 
+               RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"d", " ", "mu", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+               
+               RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"d", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"k", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"betai", "+", 
+               RowBox[{"betad", " ", "d"}], "+", 
+               RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"k", " ", "mu", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+               
+               RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"d", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"k", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"betai", "+", 
+               RowBox[{"betad", " ", "d"}], "+", 
+               RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["mu", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+               
+               RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+               RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+               RowBox[{"alpha", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"d", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               RowBox[{"k", " ", 
+                SuperscriptBox["mu", "2"]}], "-", 
+               SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"betai", "+", 
+               RowBox[{"betad", " ", "d"}], "+", 
+               RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}]}], 
+         ")"}]}]}]}], ",", 
+     RowBox[{"e", "\[Rule]", 
+      RowBox[{
+       FractionBox["1", "alpha"], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"d", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+              RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+              RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+              RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+              RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+              
+              RowBox[{"alpha", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              RowBox[{"d", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              RowBox[{"k", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"betai", "+", 
+              RowBox[{"betad", " ", "d"}], "+", 
+              RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"k", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+              RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+              RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+              RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+              RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+              
+              RowBox[{"alpha", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              RowBox[{"d", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              RowBox[{"k", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"betai", "+", 
+              RowBox[{"betad", " ", "d"}], "+", 
+              RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"mu", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+              RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+              RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+              RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+              RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+              
+              RowBox[{"alpha", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              RowBox[{"d", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              RowBox[{"k", " ", 
+               SuperscriptBox["mu", "2"]}], "-", 
+              SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"betai", "+", 
+              RowBox[{"betad", " ", "d"}], "+", 
+              RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"i", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"alpha", " ", "betai", " ", "lambda"}], "+", 
+         RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "-", 
+         RowBox[{"alpha", " ", "d", " ", "mu"}], "-", 
+         RowBox[{"alpha", " ", "k", " ", "mu"}], "+", 
+         RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "-", 
+         RowBox[{"alpha", " ", 
+          SuperscriptBox["mu", "2"]}], "-", 
+         RowBox[{"d", " ", 
+          SuperscriptBox["mu", "2"]}], "-", 
+         RowBox[{"k", " ", 
+          SuperscriptBox["mu", "2"]}], "-", 
+         SuperscriptBox["mu", "3"]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"betai", "+", 
+           RowBox[{"betad", " ", "d"}], "+", 
+           RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}]}], ",", 
+     RowBox[{"r", "\[Rule]", 
+      RowBox[{"-", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"k", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "alpha"}], " ", "betai", " ", "lambda"}], "-", 
+             RowBox[{"alpha", " ", "betad", " ", "d", " ", "lambda"}], "+", 
+             RowBox[{"alpha", " ", "d", " ", "mu"}], "+", 
+             RowBox[{"alpha", " ", "k", " ", "mu"}], "-", 
+             RowBox[{"alpha", " ", "betad", " ", "lambda", " ", "mu"}], "+", 
+             RowBox[{"alpha", " ", 
+              SuperscriptBox["mu", "2"]}], "+", 
+             RowBox[{"d", " ", 
+              SuperscriptBox["mu", "2"]}], "+", 
+             RowBox[{"k", " ", 
+              SuperscriptBox["mu", "2"]}], "+", 
+             SuperscriptBox["mu", "3"]}], ")"}]}], ")"}], "/", 
+         RowBox[{"(", 
+          RowBox[{"mu", " ", 
+           RowBox[{"(", 
+            RowBox[{"alpha", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"d", "+", "k", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"betai", "+", 
+             RowBox[{"betad", " ", "d"}], "+", 
+             RowBox[{"betad", " ", "mu"}]}], ")"}]}], ")"}]}], ")"}]}]}]}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.705238186102359*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 686},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1517, 43, 159, "Input"],
+Cell[2100, 67, 3736, 100, 215, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5873, 172, 446, 13, 53, "Input"],
+Cell[6322, 187, 417, 13, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6776, 205, 1018, 27, 81, "Input"],
+Cell[7797, 234, 804, 26, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8638, 265, 1029, 27, 81, "Input"],
+Cell[9670, 294, 858, 28, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10565, 327, 1189, 31, 104, "Input"],
+Cell[11757, 360, 999, 32, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12793, 397, 1395, 41, 138, "Input"],
+Cell[14191, 440, 14114, 339, 823, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
